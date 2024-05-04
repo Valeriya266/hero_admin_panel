@@ -23,7 +23,7 @@ const HeroesListItem = ({name, description, element}) => {
     return (
         <li 
             className={`card flex-row mb-4 shadow-lg text-white ${elementClassName}`}>
-            <img src="http://www.stpaulsteinbach.org/wp-content/uploads/2014/09/unknown-hero.jpg" 
+            <img src="https://img.freepik.com/premium-vector/white-man-icon-for-app-and-web-isolated-on-white-background-color-icon_599062-393.jpg?w=740" 
                  className="img-fluid w-25 d-inline" 
                  alt="unknown hero" 
                  style={{'objectFit': 'cover'}}/>
