@@ -21,7 +21,14 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 heroesLoadingStatus: 'error'
-            }
+            }   
+        case 'HERO_DELETED': 
+            // Формируем новый массив
+        const newHeroList = state.heroes.filter(item => item.id !== action.payload);
+            return {
+                ...state,
+                heroes: newHeroList
+            }    
         default: return state
     }
 }
