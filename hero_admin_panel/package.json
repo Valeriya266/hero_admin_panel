@@ -19,7 +19,7 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"npx json-server heroes.json --port 3001\" \"react-scripts --openssl-legacy-provider start\"",
+    "start": "concurrently \"react-scripts --openssl-legacy-provider start\" \"npx json-server heroes.json --port 3001\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "json-server": "^0.17.4"
   }
 }

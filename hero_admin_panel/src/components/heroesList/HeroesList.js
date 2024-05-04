@@ -22,7 +22,7 @@ const HeroesList = () => {
             .then(data => dispatch(heroesFetched(data)))
             .catch(() => dispatch(heroesFetchingError()))
 
-        // eslint-disable-next-line
+        //eslint-disable-next-line
     }, []);
 
     if (heroesLoadingStatus === "loading") {
