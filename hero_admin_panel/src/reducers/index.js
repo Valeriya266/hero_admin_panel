@@ -23,12 +23,17 @@ const reducer = (state = initialState, action) => {
                 heroesLoadingStatus: 'error'
             }   
         case 'HERO_DELETED': 
-            // Формируем новый массив
         const newHeroList = state.heroes.filter(item => item.id !== action.payload);
             return {
                 ...state,
                 heroes: newHeroList
-            }    
+            }
+        case 'HERO_CREATED': 
+            let newCreatedHeroList = [...state.heroes, action.payload];
+            return {
+                ...state,
+                heroes: newCreatedHeroList
+            }       
         default: return state
     }
 }
