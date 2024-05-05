@@ -9,10 +9,12 @@
 // Дополнительно:
 // Элементы <option></option> желательно сформировать на базе
 // данных из фильтров
-
+import {useHttp} from '../../hooks/http.hook';
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
+
+import { heroCreated } from '../../actions';
 
 const HeroesAddForm = () => {
 

@@ -11,6 +11,18 @@
       "name": "Морской герой",
       "description": "Как аквамен, но не из DC",
       "element": "water"
+    },
+    {
+      "id": "014cffd6-19ff-4619-96d6-b80aaeb149ff",
+      "name": "Супер девушка",
+      "description": "Быстрая как молния",
+      "element": "wind"
+    },
+    {
+      "id": "9ea0c57d-9564-44ba-9646-0163c22da7a5",
+      "name": "Водный змей",
+      "description": "Плавать и прыгать",
+      "element": "water"
     }
   ]
 }
