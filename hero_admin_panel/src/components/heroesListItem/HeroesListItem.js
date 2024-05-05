@@ -1,5 +1,3 @@
-import {removeItemById} from '../heroesListItem';
-
 const HeroesListItem = ({name, description, element, onDelete}) => {
 
     let elementClassName;
